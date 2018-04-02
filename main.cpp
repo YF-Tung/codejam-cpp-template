@@ -4,7 +4,9 @@
  **/
 #include "solver.h"
 
-void Solver::solve_one_case (fstream& fin, fstream& fout) {
+string Solver::solve_one_case (fstream& fin) {
+  string result = "";
+  return result;
 }
 
 void Solver::solve_gcj(int argc, char** argv) {
@@ -17,8 +19,9 @@ void Solver::solve_gcj(int argc, char** argv) {
   int num_case = -1;
   fin >> num_case;
   for (int case_idx = 1; case_idx <= num_case; case_idx++) {
-    solve_one_case(fin, fout);
+    fout << "Case #" << case_idx << ": " << solve_one_case(fin)<<endl;
   }
+  cout << num_case << " cases solved." << endl;
 }
 
 void Solver::solve_general(int argc, char** argv) {

@@ -42,6 +42,6 @@ class Solver {
     }
     void solve_gcj(int argc, char** argv);
     void solve_general(int argc, char** argv);
-    void solve_one_case(fstream&, fstream&);
+    string solve_one_case(fstream&);
 };
 
